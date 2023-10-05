@@ -1,0 +1,16 @@
+<br>
+<input routerLink="/admin/livros/novo" type="button" value="Add livro" />
+<br>
+
+<table border="1px">
+    <tr class="headcolor">
+        <th>Nome:</th>
+        <th>Ano: </th>
+    </tr>
+    <tr *ngFor="let livro of lista">
+
+        <td>{{livro.titulo}}</td>
+        <td>{{livro.autor}}</td>
+       
+    </tr>
+</table>

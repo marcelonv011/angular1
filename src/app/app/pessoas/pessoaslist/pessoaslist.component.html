@@ -1,0 +1,14 @@
+<input routerLink="/admin/pessoas/novo" type="button" value="Add pessoa" />
+<br>
+<table border="1px">
+    <tr class="headcolor">
+        <th>Nome:</th>
+        <th>Ano: </th>
+    </tr>
+    <tr *ngFor="let pessoa of lista">
+
+        <td *ngIf="pessoa.idade > 30">{{pessoa.nome}}</td>
+        <td *ngIf="pessoa.idade > 30">{{pessoa.idade}}</td>
+       
+    </tr>
+</table>
