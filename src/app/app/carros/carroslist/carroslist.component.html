@@ -1,16 +1,17 @@
-<br>
-<input routerLink="/admin/carros/novo" type="button" value="Add carro" />
-<br>
-
-<table border="1px">
-    <tr class="headcolor">
+<div class="d-flex justify-content-center mt-5">
+    <input routerLink="/admin/carros/novo" type="button" class="btn btn-primary" value="Add carro" />
+  </div>
+  
+  <div class="d-flex justify-content-center mt-3">
+    <table border="1px">
+      <tr class="headcolor">
         <th>Nome:</th>
         <th>Ano: </th>
-    </tr>
-    <tr *ngFor="let carro of lista">
-
+      </tr>
+      <tr *ngFor="let carro of lista">
         <td>{{carro.nome}}</td>
         <td>{{carro.ano}}</td>
-       
-    </tr>
-</table>
+      </tr>
+    </table>
+  </div>
+  

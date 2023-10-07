@@ -1,0 +1,27 @@
+/* styles.css (ou seu arquivo CSS personalizado) */
+.custom-nav {
+    background-color: #007bff; /* Cor de fundo do menu */
+    padding: 10px;
+  }
+  
+  .custom-nav-item {
+    margin-right: 10px; /* Espaçamento entre os itens de menu */
+  }
+  
+  .custom-nav-link {
+    color: #ffffff; /* Cor do texto do link */
+    text-decoration: none; /* Remover sublinhado do link */
+    padding: 5px 10px; /* Espaçamento interno do link */
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Efeito de transição suave na cor de fundo */
+    display: flex; /* Ativar o modelo de layout flex */
+    align-items: center;
+  }
+  
+  .custom-nav-link:hover {
+    background-color: #0056b3; /* Cor de fundo do link ao passar o mouse */
+  }
+  
+.icon-spacing {
+  margin-right: 5px; /* Adicione a margem desejada à direita do ícone */
+}

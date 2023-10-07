@@ -1,7 +1,23 @@
-<input routerLink="/admin/pessoas" type="button" value="Listagem de pessoas" />
-<br>
-<input routerLink="/admin/carros" type="button" value="Listagem de carros" />
-<br>
-<input routerLink="/admin/livros" type="button" value="Listagem de livros" />
-<br>
-<input routerLink="/login" type="button" value="Sair" />
+
+<ul ngbNav #nav="ngbNav" class="nav-tabs custom-nav d-flex justify-content-center align-items-center">
+    <li ngbNavItem class="custom-nav-item">
+      <button ngbNavLink routerLink="/admin/pessoas" class="custom-nav-link">
+        <i class="bi bi-person-raised-hand"></i>Listagem de pessoas
+      </button>
+      <ng-template ngbNavContent></ng-template>
+    </li>
+    <li ngbNavItem class="custom-nav-item">
+      <button ngbNavLink routerLink="/admin/carros" class="custom-nav-link">
+        <i class="bi bi-car-front-fill icon-spacing"></i> Listagem de carros
+      </button>
+      <ng-template ngbNavContent></ng-template>
+    </li>    
+    <li ngbNavItem class="custom-nav-item">
+      <button ngbNavLink routerLink="/admin/livros" class="custom-nav-link">
+        <i class="bi bi-book icon-spacing"></i>Listagem de livros
+      </button>
+      <ng-template ngbNavContent></ng-template>
+    </li>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+  
