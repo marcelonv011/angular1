@@ -2,12 +2,15 @@
 <input routerLink="/admin/pessoas/novo" type="button" class="btn btn-primary" value="Add pessoa" />
 <br>
 </div>
-
+<h3 class="alert alert-secondary text-center" style="color: rgb(0, 0, 0);">Sabores</h3>
+    <button type="button" class="btn btn-success mb-3" (click)="adicionar(modal1)">
+        <i class="fa fa-plus"></i> Adicionar sabor
+    </button>
 <div class="d-flex justify-content-center mt-3">
 <table border="1px">
     <tr class="headcolor">
         <th>Nome:</th>
-        <th>Ano: </th>
+        <th>idade: </th>
     </tr>
     <tr *ngFor="let pessoa of lista">
 
@@ -17,3 +20,16 @@
     </tr>
 </table>
 </div>
+
+<ng-template #modal1 let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+        <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+    </div>
+    <div class="modal-body">
+      <app-pessoasdetails [pessoa]="objetoSelecionadoParaEdicao" (retorno)="addOuEditarPessoa($event)" ></app-pessoasdetails>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-light" (click)="modal.close('Close click')">Close</button>
+    </div>
+</ng-template>

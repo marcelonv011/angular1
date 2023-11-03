@@ -1,6 +1,6 @@
-export class Pessoa{
 
+export class Pessoa {
+    id!: number;
     nome!: string;
     idade!: number;
-
 }
